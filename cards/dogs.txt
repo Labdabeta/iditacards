@@ -34,3 +34,6 @@ cards/dogs/problem_dog.pdf
 cards/dogs/problem_dog.pdf
 cards/dogs/problem_dog.pdf
 cards/dogs/cricket.pdf
+cards/dogs/lazy_dog.pdf
+cards/dogs/lazy_dog.pdf
+cards/dogs/lazy_dog.pdf
