@@ -1,18 +1,13 @@
 % Compile with XeLaTeX
+% Now tests new features!
 \documentclass{iditacard}
 % Montage with `montage -tile 3x3 -geometry 750x1050+50+25 in* out.pdf`
 
-\cardtype{utility}
-\rarity{legendary}
-
 \begin{document}
-\begin{card}
-\energy{1}
-\health{2}
-\risk{3}
+\begin{playcard}[special]{utility}{legendary}
+\costs{1}{2}{3}
 \name{Example Card}
 \text{Move 10 myrameters. Shuffle your discard pile into your deck.}
 \flava{What doesn't kill you makes you stronger.}
-\type{utility}
-\end{card}
+\end{playcard}
 \end{document}

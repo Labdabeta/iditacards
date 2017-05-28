@@ -60,6 +60,13 @@
 \fill [health] (50.0/300.0,800.0/300.0) rectangle (250.0/300.0,700.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
 }
 
+\newcommand{\@condcost}[2]{\ifnum 0<#1#2\fi}
+\newcommand{\costs}[3]{%
+\@condcost{#1}{\energy{#1}}%
+\@condcost{#2}{\health{#2}}%
+\@condcost{#3}{\risk{#3}}%
+}
+
 \newcommand{\risk}[1]{%
 \fill [risk] (50.0/300.0,650.0/300.0) rectangle (250.0/300.0,550.0/300.0) node [text=white,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
 }
@@ -111,3 +118,13 @@
 }
 {% End
 \end{tikzpicture}}
+
+\newenvironment{playcard}[3][@]
+{% Begin
+\cardtype{#2}\rarity{#3}
+\begin{card}
+\type{\if #1@#2\else#1 #2\fi}
+}
+{% End
+\end{card}
+}
