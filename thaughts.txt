@@ -1,0 +1,4 @@
+Risk = pay over next n turns!!!
+Reliable = "draw your last risk for each risk card"
+   \- same with harness
+Rifle -> parasite

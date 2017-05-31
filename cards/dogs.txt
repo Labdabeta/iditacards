@@ -25,6 +25,10 @@ cards/dogs/retriever.pdf
 cards/dogs/retriever.pdf
 cards/dogs/cute_dog.pdf
 cards/dogs/cute_dog.pdf
+cards/dogs/cute_dog.pdf
+cards/dogs/cute_dog.pdf
+cards/dogs/smart_dog.pdf
+cards/dogs/smart_dog.pdf
 cards/dogs/smart_dog.pdf
 cards/dogs/smart_dog.pdf
 cards/dogs/malamute.pdf
@@ -37,3 +41,10 @@ cards/dogs/cricket.pdf
 cards/dogs/lazy_dog.pdf
 cards/dogs/lazy_dog.pdf
 cards/dogs/lazy_dog.pdf
+cards/dogs/russian_bear_dog.pdf
+cards/dogs/russian_bear_dog.pdf
+cards/dogs/russian_bear_dog.pdf
+cards/dogs/greyhound.pdf
+cards/dogs/greyhound.pdf
+cards/dogs/greyhound.pdf
+cards/dogs/greyhound.pdf

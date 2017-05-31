@@ -1,4 +1,4 @@
-.PHONY: all clean printrun cardrun cards
+.PHONY: all clean printrun cardrun cards deepclean
 
 CARDLIST=cards/list.txt
 PRINTLIST=cards/print.txt
@@ -19,8 +19,13 @@ cardrun.pdf: $(CARDRUN)
 
 %.pdf: %.tex
 	xelatex --output-directory=$(@D) $^
+	echo "$@" >> changelist.txt
 
 clean:
 	-find . -name '*.aux' -delete
 	-find . -name '*.log' -delete
 
+deepclean:
+	-find cards -name '*.pdf' -delete
+	-find . -name '*.aux' -delete
+	-find . -name '*.log' -delete

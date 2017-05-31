@@ -1,7 +1,3 @@
-cards/attachments/dog_chow.pdf
-cards/attachments/dog_chow.pdf
-cards/attachments/dog_chow.pdf
-cards/attachments/dog_chow.pdf
 cards/attachments/nuclear_reactor.pdf
 cards/attachments/plate_mail.pdf
 cards/attachments/plate_mail.pdf
@@ -13,7 +9,17 @@ cards/attachments/dog_collar.pdf
 cards/attachments/steam_engine.pdf
 cards/attachments/steam_engine.pdf
 cards/attachments/harness.pdf
+cards/attachments/harness.pdf
+cards/attachments/harness.pdf
+cards/attachments/harness.pdf
+cards/attachments/coat.pdf
+cards/attachments/coat.pdf
+cards/attachments/coat.pdf
 cards/attachments/coat.pdf
 cards/attachments/tiara.pdf
 cards/attachments/tiara.pdf
 cards/attachments/tiara.pdf
+cards/attachments/tiara.pdf
+cards/attachments/squirrel.pdf
+cards/attachments/squirrel.pdf
+cards/attachments/squirrel.pdf

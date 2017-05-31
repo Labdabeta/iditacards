@@ -2,9 +2,6 @@ cards/util/campfire.pdf
 cards/util/campfire.pdf
 cards/util/campfire.pdf
 cards/util/campfire.pdf
-cards/util/dog_trap.pdf
-cards/util/dog_trap.pdf
-cards/util/dog_trap.pdf
 cards/util/sleeping_bag.pdf
 cards/util/daylight_savings_time.pdf
 cards/util/sticky_snow.pdf
@@ -39,10 +36,6 @@ cards/util/thermostat.pdf
 cards/util/ice_box.pdf
 cards/util/ice_box.pdf
 cards/util/ice_box.pdf
-cards/util/parasite.pdf
-cards/util/parasite.pdf
-cards/util/parasite.pdf
-cards/util/parasite.pdf
 cards/util/stab_in_the_dark.pdf
 cards/util/stab_in_the_dark.pdf
 cards/util/stab_in_the_dark.pdf
