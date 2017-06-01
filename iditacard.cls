@@ -5,10 +5,14 @@
 \RequirePackage{fontspec}
 \RequirePackage{xcolor}
 
+\RequirePackage[none]{hyphenat}
+
 \RequirePackage{tikz}
 \usetikzlibrary{positioning,shapes,shadows,arrows,backgrounds,fit}
 \RequirePackage{shapepar}
 \RequirePackage{microtype}
+
+\graphicspath{{images/}}
 
 \newfontfamily\bebas{Bebas Neue Regular}
 \newfontfamily\alegreya{Alegreya}
@@ -73,12 +77,12 @@
 
 \newcommand{\name}[1]{%
 % add draw to the node to see its box
-\node [rectangle, anchor=north, minimum width=2.15in, minimum height=2.0/3.0in, text centered, text width=1.833333in, inner sep=0mm] at (375.0/300.0,975.0/300.0) {\bf\fontsize{25}{30}\bebas#1\par};
+\node [rectangle, anchor=north, minimum width=2.15in, minimum height=2.0/3.0in, text centered, text width=1.833333in, inner sep=0mm] at (375.0/300.0,975.0/300.0) {\bf\fontsize{20}{30}\bebas#1\par};
 }
 
 \newcommand{\text}[1]{%
 % add draw to the node to see its box
-\node [rectangle, minimum width=1.833333in, minimum height=200.0/300.0, text centered, text width=1.833333in, inner sep=1mm, anchor=north] at (375.0/300.0,450.0/300) {\fontsize{16}{16}\bebas#1\par};
+\node [rectangle, minimum width=1.833333in, minimum height=200.0/300.0, text centered, text width=1.833333in, inner sep=0mm, anchor=north] at (375.0/300.0,450.0/300) {\fontsize{16}{16}\bebas#1\par};
 }
 
 \newcommand{\flava}[1]{%
@@ -90,8 +94,9 @@
 \node [rectangle, minimum width=1.833333in, minimum height=100.0/300.0, text centered, text width=1.833333in, inner sep=0mm, anchor=north] at (375.0/300.0,100.0/300.0) {\fontsize{12}{12}\bebas#1\par};
 }
 
+% Aspect ratio of about 3:2
 \newcommand{\art}[1]{%
-\node [rectangle, minimum width=650.0/300.0, minimum height=425.0/300.0, inner sep=0, anchor=north west] at (50.0/300.0, 888.0/300.0) {\noindent\includegraphics*[width=2.166667in, height=1.416667in]{#1}};
+\node [rectangle, minimum width=649.8/300.0, minimum height=425.0/300.0, inner sep=0, anchor=north west] at (49.2/300.0, 888.0/300.0) {\noindent\includegraphics*[width=2.1664in, height=1.416667in]{#1}};
 }
 
 \newcommand{\Mm}{myriameter}
