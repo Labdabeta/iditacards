@@ -123,7 +123,7 @@
 {% Begin
 \noindent\begin{tikzpicture}[x=1in,y=1in]
 \fill [\edgecolor] (0,0) rectangle (2.5,3.5);
-\fill [\backgroundcolor] (50.0/300.0,50.0/300.0) rectangle (700.0/300.0,1000.0/300.0);
+\fill[rounded corners=10pt] [\backgroundcolor] (50.0/300.0,50.0/300.0) rectangle (700.0/300.0,1000.0/300.0);
 }
 {% End
 \end{tikzpicture}}
