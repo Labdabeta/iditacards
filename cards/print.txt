@@ -1,4 +1,3 @@
-list.pdf
 cards/stretches/town.pdf
 cards/stretches/frozen_lake.pdf
 cards/stretches/hills.pdf
@@ -318,10 +317,10 @@ cards/util/rest.pdf
 cards/util/rest.pdf
 cards/util/rest.pdf
 cards/util/rest.pdf
-cards/util/rifle.pdf
-cards/util/rifle.pdf
-cards/util/rifle.pdf
-cards/util/rifle.pdf
+cards/util/dog_trap.pdf
+cards/util/dog_trap.pdf
+cards/util/dog_trap.pdf
+cards/util/dog_trap.pdf
 cards/util/campfire.pdf
 cards/util/campfire.pdf
 cards/util/campfire.pdf
@@ -373,14 +372,6 @@ cards/util/vigilance.pdf
 cards/util/vigilance.pdf
 cards/util/vigilance.pdf
 cards/util/serenity.pdf
-cards/damaged.pdf
-cards/damaged.pdf
-cards/damaged.pdf
-cards/damaged.pdf
-cards/damaged.pdf
-cards/damaged.pdf
-cards/damaged.pdf
-cards/damaged.pdf
 cards/damaged.pdf
 cards/damaged.pdf
 cards/damaged.pdf

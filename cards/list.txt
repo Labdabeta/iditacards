@@ -99,7 +99,7 @@ cards/sleds/here_boy.pdf
 cards/sleds/trade_dog.pdf
 cards/sleds/new_sled.pdf
 cards/util/rest.pdf
-cards/util/rifle.pdf
+cards/util/dog_trap.pdf
 cards/util/campfire.pdf
 cards/util/sleeping_bag.pdf
 cards/util/daylight_savings_time.pdf

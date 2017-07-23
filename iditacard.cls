@@ -57,15 +57,18 @@
 }
 
 \newcommand{\energy}[1]{%
-\fill [energy] (50.0/300.0,875.0/300.0) rectangle (150.0/300.0,775.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+\fill [black] (50.0/300.0,875.0/300.0) rectangle (150.0/300.0,775.0/300.0);
+\fill [energy] (55.0/300.0,870.0/300.0) rectangle (145.0/300.0,780.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
 }
 
 \newcommand{\health}[1]{%
-\fill [health] (50.0/300.0,725.0/300.0) rectangle (150.0/300.0,625.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+\fill [black] (50.0/300.0,725.0/300.0) rectangle (150.0/300.0,625.0/300.0);
+\fill [health] (55.0/300.0,720.0/300.0) rectangle (145.0/300.0,630.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
 }
 
 \newcommand{\risk}[1]{%
-\fill [risk] (50.0/300.0,575.0/300.0) rectangle (150.0/300.0,475.0/300.0) node [text=white,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+\fill [white] (50.0/300.0,575.0/300.0) rectangle (150.0/300.0,475.0/300.0);
+\fill [risk] (55.0/300.0,570.0/300.0) rectangle (145.0/300.0,480.0/300.0) node [text=white,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
 }
 
 \newcommand{\@condcost}[2]{\ifnum 0<#1#2\fi}
