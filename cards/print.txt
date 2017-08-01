@@ -1,13 +1,3 @@
-cards/stretches/town.pdf
-cards/stretches/frozen_lake.pdf
-cards/stretches/hills.pdf
-cards/stretches/wasteland.pdf
-cards/stretches/cliff_face.pdf
-cards/stretches/forest.pdf
-cards/stretches/blizzard.pdf
-cards/stretches/rope_bridge.pdf
-cards/stretches/mountain.pdf
-cards/stretches/village.pdf
 cards/attachments/a_hat.pdf
 cards/attachments/a_hat.pdf
 cards/attachments/a_hat.pdf
@@ -372,6 +362,7 @@ cards/util/vigilance.pdf
 cards/util/vigilance.pdf
 cards/util/vigilance.pdf
 cards/util/serenity.pdf
+cards/damaged.pdf
 cards/damaged.pdf
 cards/damaged.pdf
 cards/damaged.pdf
