@@ -2,21 +2,27 @@
 
 CARDLIST=cards/list.txt
 PRINTLIST=cards/print.txt
+INFOLIST=cards/infolist.txt
 CARDS=$(patsubst %.tex,%.pdf,$(shell find cards -name '*.tex'))
 CARDRUN=$(shell cat $(CARDLIST) | grep -v \\\#)
 PRINTRUN=$(shell cat $(PRINTLIST) | grep -v \\\#)
 PNGRUN=$(shell cat $(PRINTLIST) | sort | uniq -c | sed -e 's/\([[:digit:]]\+\) \(.*\).pdf/\2[\1].png/')
+INFORUN=$(shell cat $(INFOLIST) | sed -e 's/.pdf/[image].png/')
 
 all:printrun cardrun explanation.pdf
 printrun: printrun.pdf
 cardrun: cardrun.pdf
+inforun: inforun.pdf
 cards: $(CARDS)
-export: $(PNGRUN)
+export: $(PNGRUN) $(INFORUN)
 
 printrun.pdf: $(PRINTRUN)
 	pdfunite $+ $@
 
 cardrun.pdf: $(CARDRUN)
+	pdfunite $+ $@
+
+inforun.pdf: $(INFORUN)
 	pdfunite $+ $@
 
 %.pdf: %.tex
@@ -71,4 +77,4 @@ clean:
 %[34].png: %.pdf; ./cardtopng.sh $@
 %[35].png: %.pdf; ./cardtopng.sh $@
 %[36].png: %.pdf; ./cardtopng.sh $@
-
+%[image].png: %.pdf; ./cardtopng.sh $@

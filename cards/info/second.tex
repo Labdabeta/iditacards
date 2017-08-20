@@ -1,0 +1,26 @@
+\documentclass{iditacard}
+
+\cardtype{utility}
+\rarity{info}
+
+\begin{document}
+\begin{card}
+\node [rectangle, minimum width=650.0/300.0, minimum height=950.0/300.0, text justified, text width=53mm, inner sep=1mm, anchor=north west] at (50.0/300.0,1000.0/300.0) {
+    \fontsize{8}{8}
+
+    \vskip -0.5em \hrule \vskip 0.5em
+    {\large \textbf{Costs} \hfill 2}
+    \vskip 0.5em \hrule \vskip 0.5em
+
+    \textsc{When} a card is played the three costs are resolved in order.
+
+    \textsc{First}, the player must discard a number of cards equal to the "energy" cost
+(blue number) of the card from their hand.  Second, the player must discard a
+number of cards equal to the "health" cost (red number) of the card from the top
+of their deck. If the player fails to pay either cost, the card does nothing.
+
+    \textsc{Finally} the player must resolve the "risk" cost (black number) of
+the card.
+};
+\end{card}
+\end{document}

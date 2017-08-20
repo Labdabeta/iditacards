@@ -42,6 +42,7 @@
 \definecolor{sled}{HTML}{7FDF7F}
 \definecolor{food}{HTML}{CFCF4F}
 
+\definecolor{info}{HTML}{FFFFFF}
 \definecolor{starting}{HTML}{777777}
 \definecolor{common}{HTML}{000000}
 \definecolor{rare}{HTML}{000077}
@@ -106,8 +107,8 @@
 \newcommand{\Mms}{myriameters}
 \newcommand{\destroy}[2]{Destroy up to #1 of #2.}
 \newcommand{\take}[2]{Take #1 of #2.}
-\newcommand{\recover}[1]{Recover #1.}
-\newcommand{\draw}[1]{Draw #1.}
+\newcommand{\recover}[1]{\ifnum #1=1 Recover a card. \else Recover #1 cards. \fi}
+\newcommand{\draw}[1]{\ifnum #1=1 Draw a card. \else Draw #1 cards. \fi}
 
 \newcommand{\raw}[1]{%
 \node [rectangle, minimum width=650.0/300.0, minimum height=950.0/300.0, text justified, text width=53mm, inner sep=1mm, anchor=north west] at (50.0/300.0,1000.0/300.0) {#1};
