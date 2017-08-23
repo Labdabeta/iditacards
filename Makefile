@@ -1,44 +1,47 @@
-.PHONY: all clean printrun cardrun cards deepclean pngs
+.PHONY: all clean printrun cardrun
+.PRECIOUS: %.pdf %.png
 
-CARDLIST=cards/list.txt
-PRINTLIST=cards/print.txt
-INFOLIST=cards/infolist.txt
-CARDS=$(patsubst %.tex,%.pdf,$(shell find cards -name '*.tex'))
-CARDRUN=$(shell cat $(CARDLIST) | grep -v \\\#)
-PRINTRUN=$(shell cat $(PRINTLIST) | grep -v \\\#)
-PNGRUN=$(shell cat $(PRINTLIST) | sort | uniq -c | sed -e 's/\([[:digit:]]\+\) \(.*\).pdf/\2[\1].png/')
-INFORUN=$(shell cat $(INFOLIST) | sed -e 's/.pdf/[image].png/')
+default: decks extras instructions
+all: decks extras instructions export
 
-all:printrun cardrun explanation.pdf
-printrun: printrun.pdf
-cardrun: cardrun.pdf
-inforun: inforun.pdf
-cards: $(CARDS)
-export: $(PNGRUN) $(INFORUN)
+instructions: outputs/instructions.pdf
 
-printrun.pdf: $(PRINTRUN)
-	pdfunite $+ $@
+extras:
+	@cp iditaboard.png outputs/iditaboard.png
+	@cp iditasingle.png outputs/iditasingle.png
+	@cp cardback.png outputs/cardback.png
 
-cardrun.pdf: $(CARDRUN)
-	pdfunite $+ $@
+DECKLIST=$(shell ls cards/decks | sed -e 's/.txt//')
+DEPENDLIST=$(DECKLIST:%=%.d)
 
-inforun.pdf: $(INFORUN)
+outputs/%.d: cards/decks/%.txt
+	sed -e 's@^@outputs/$*.pdf:@' < $< > $@
+	cat $< | sort | uniq -c | sed -e 's@\([[:digit:]]\+\) \(.*\).pdf@export:: \2[\1].png; mv $$< outputs/$*/$$(<F)@' >> $@
+	echo 'decks: outputs/$*.pdf' >> $@
+
+include $(DECKLIST:%=outputs/%.d)
+
+outputs/instructions.pdf: instructions.tex
+	xelatex -interaction=batchmode -halt-on-error --output-directory=outputs $^
+
+outputs/%.pdf:
 	pdfunite $+ $@
 
 %.pdf: %.tex
-	xelatex --output-directory=$(@D) $^
+	xelatex -interaction=batchmode -halt-on-error --output-directory=$(@D) $^
 	echo "$@" >> changelist.txt
 	rm $*.aux
 	rm $*.log
 
-pngs: printrun.pdf
-	pdftoppm -scale-to-x 825 -scale-to-y 1125 -png printrun.pdf printpngs-
+force-make:
 
 clean:
 	-find cards -name '*.pdf' -delete
-	-rm list.pdf
-	-rm -f printpngs-*
-	-find . -name '*].png' -delete
+	-find outputs -name '*.pdf' -delete
+	-find outputs -name '*].png' -delete
+	-find outputs -name '*.d' -delete
+
+print-%  : ; @echo $* = $($*)
 
 # Rules for each multiplicity of png
 %[1].png: %.pdf; ./cardtopng.sh $@

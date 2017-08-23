@@ -57,6 +57,10 @@
     \newcommand{\edgecolor}{#1}
 }
 
+\newcommand{\deck}[1]{%
+    \newcommand{\whichdeck}{#1}
+}
+
 \newcommand{\energy}[1]{%
 \fill [black] (50.0/300.0,875.0/300.0) rectangle (150.0/300.0,775.0/300.0);
 \fill [energy] (55.0/300.0,870.0/300.0) rectangle (145.0/300.0,780.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
@@ -103,12 +107,43 @@
 \node [rectangle, minimum width=649.8/300.0, minimum height=425.0/300.0, inner sep=0, anchor=north west] at (49.2/300.0, 888.0/300.0) {\noindent\includegraphics*[width=2.1664in, height=1.416667in]{#1}};
 }
 
+\newcommand{\utilcount}[1]{%
+\node [anchor=center] at (180.0/300.0, 745.0/300.0) {#1}; % Coord is art NW +- offset of image
+}
+
+\newcommand{\dogcount}[1]{%
+\node [anchor=center] at (310.0/300.0, 745.0/300.0) {#1};
+}
+
+\newcommand{\movecount}[1]{%
+\node [anchor=center] at (440.0/300.0, 745.0/300.0) {#1};
+}
+
+\newcommand{\foodcount}[1]{%
+\node [anchor=center] at (570.0/300.0, 745.0/300.0) {#1};
+}
+
+\newcommand{\attachcount}[1]{%
+\node [anchor=center] at (212.0/300.0, 603.0/300.0) {#1};
+}
+
+\newcommand{\personalcount}[1]{%
+\node [anchor=center] at (374.0/300.0, 603.0/300.0) {#1};
+}
+
+\newcommand{\sledcount}[1]{%
+\node [anchor=center] at (536.0/300.0, 603.0/300.0) {#1};
+}
+
 \newcommand{\Mm}{myriameter}
 \newcommand{\Mms}{myriameters}
 \newcommand{\destroy}[2]{Destroy up to #1 of #2.}
 \newcommand{\take}[2]{Take #1 of #2.}
 \newcommand{\recover}[1]{\ifnum #1=1 Recover a card. \else Recover #1 cards. \fi}
 \newcommand{\draw}[1]{\ifnum #1=1 Draw a card. \else Draw #1 cards. \fi}
+\newcommand{\personal}{{\color{personal}personal}}
+\newcommand{\hypothermia}{{\color{energy}hypothermia}}
+\newcommand{\starvation}{{\color{health}starvation}}
 
 \newcommand{\raw}[1]{%
 \node [rectangle, minimum width=650.0/300.0, minimum height=950.0/300.0, text justified, text width=53mm, inner sep=1mm, anchor=north west] at (50.0/300.0,1000.0/300.0) {#1};
@@ -122,12 +157,24 @@
 \node [rectangle, minimum width=650.0/300.0, minimum height=950.0/300.0, text ragged, text width=53mm, inner sep=1mm, anchor=north west] at (50.0/300.0,1000.0/300.0) {#1};
 }
 
+\newcommand{\hraw}[1]{%
+\node [rectangle, rotate=90, minimum width=950.0/300.0, minimum height=650.0/300.0, text justified, text width=80mm, inner sep=1mm, anchor=north west] at (50.0/300.0,50.0/300.0) {#1};
+}
+
+\newcommand{\hrawcenter}[1]{%
+\node [rectangle, rotate=90, minimum width=950.0/300.0, minimum height=650.0/300.0, text centered, text width=80mm, inner sep=1mm, anchor=north west] at (50.0/300.0,50.0/300.0) {#1};
+}
+
+\newcommand{\hrawleft}[1]{%
+\node [rectangle, rotate=90, minimum width=950.0/300.0, minimum height=650.0/300.0, text ragged, text width=80mm, inner sep=1mm, anchor=north west] at (50.0/300.0,50.0/300.0) {#1};
+}
 
 \newenvironment{card}
 {% Begin
 \noindent\begin{tikzpicture}[x=1in,y=1in]
 \fill [\edgecolor] (0,0) rectangle (2.5,3.5);
 \fill[rounded corners=10pt] [\backgroundcolor] (50.0/300.0,50.0/300.0) rectangle (700.0/300.0,1000.0/300.0);
+\node at (645.0/300.0,95.0/300.0) {\includegraphics[width=0.25in, height=0.25in]{deck/\whichdeck.png}};
 }
 {% End
 \end{tikzpicture}}
