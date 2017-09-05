@@ -16,13 +16,19 @@ DEPENDLIST=$(DECKLIST:%=%.d)
 
 outputs/%.d: cards/decks/%.txt
 	sed -e 's@^@outputs/$*.pdf:@' < $< > $@
-	cat $< | sort | uniq -c | sed -e 's@\([[:digit:]]\+\) \(.*\).pdf@export:: \2[\1].png; mv $$< outputs/$*/$$(<F)@' >> $@
+	cat $< | sort | uniq -c | sed -e 's@\([[:digit:]]\+\) \(.\+/\)*\(.\+\).pdf@export: outputs/$*/\3[\1].png@' >> $@
+	cat $< | sort | uniq -c | sed -e 's@\([[:digit:]]\+\) \(.\+/\)*\(.\+\).pdf@outputs/$*/\3[\1].png: \2\3[\1].png; cp \2\3[\1].png outputs/$*/\3[\1].png@' >> $@
+	mkdir -p outputs/$*
 	echo 'decks: outputs/$*.pdf' >> $@
 
 include $(DECKLIST:%=outputs/%.d)
 
 outputs/instructions.pdf: instructions.tex
 	xelatex -interaction=batchmode -halt-on-error --output-directory=outputs $^
+
+export: outputs/instructions.pdf
+	pdftoppm -scale-to-x 1050 -scale-to-y 1500 -png outputs/instructions.pdf outputs/instructions/i
+	cd outputs/instructions; for i in $$(ls); do convert $$i -gravity center -background white -extent 1125x1575 $$i; done
 
 outputs/%.pdf:
 	pdfunite $+ $@
@@ -37,6 +43,7 @@ force-make:
 
 clean:
 	-find cards -name '*.pdf' -delete
+	-find cards -name '*].png' -delete
 	-find outputs -name '*.pdf' -delete
 	-find outputs -name '*].png' -delete
 	-find outputs -name '*.d' -delete

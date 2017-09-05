@@ -16,5 +16,6 @@ outputs/damage.pdf:cards/damaged.pdf
 outputs/damage.pdf:cards/damaged.pdf
 outputs/damage.pdf:cards/damaged.pdf
 outputs/damage.pdf:cards/damaged.pdf
-     export:: cards/damaged[18].png; mv $< outputs/damage/$(<F)
+     export: outputs/damage/damaged[18].png
+     outputs/damage/damaged[18].png: cards/damaged[18].png; cp cards/damaged[18].png outputs/damage/damaged[18].png
 decks: outputs/damage.pdf
