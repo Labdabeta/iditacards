@@ -4,6 +4,8 @@ outputs/legendary.pdf:cards/attachments/buffer_panel.pdf
 outputs/legendary.pdf:cards/dogs/engineer_dog.pdf
 outputs/legendary.pdf:cards/dogs/moose.pdf
 outputs/legendary.pdf:cards/dogs/cricket.pdf
+outputs/legendary.pdf:cards/dogs/puppy.pdf
+outputs/legendary.pdf:cards/dogs/robodog.pdf
 outputs/legendary.pdf:cards/food/waffle.pdf
 outputs/legendary.pdf:cards/movement/out_of_control.pdf
 outputs/legendary.pdf:cards/movement/all_in.pdf
@@ -24,6 +26,8 @@ outputs/legendary.pdf:cards/util/serenity.pdf
       export: outputs/legendary/cricket[1].png
       export: outputs/legendary/engineer_dog[1].png
       export: outputs/legendary/moose[1].png
+      export: outputs/legendary/puppy[1].png
+      export: outputs/legendary/robodog[1].png
       export: outputs/legendary/waffle[1].png
       export: outputs/legendary/all_in[1].png
       export: outputs/legendary/out_of_control[1].png
@@ -44,6 +48,8 @@ outputs/legendary.pdf:cards/util/serenity.pdf
       outputs/legendary/cricket[1].png: cards/dogs/cricket[1].png; cp cards/dogs/cricket[1].png outputs/legendary/cricket[1].png
       outputs/legendary/engineer_dog[1].png: cards/dogs/engineer_dog[1].png; cp cards/dogs/engineer_dog[1].png outputs/legendary/engineer_dog[1].png
       outputs/legendary/moose[1].png: cards/dogs/moose[1].png; cp cards/dogs/moose[1].png outputs/legendary/moose[1].png
+      outputs/legendary/puppy[1].png: cards/dogs/puppy[1].png; cp cards/dogs/puppy[1].png outputs/legendary/puppy[1].png
+      outputs/legendary/robodog[1].png: cards/dogs/robodog[1].png; cp cards/dogs/robodog[1].png outputs/legendary/robodog[1].png
       outputs/legendary/waffle[1].png: cards/food/waffle[1].png; cp cards/food/waffle[1].png outputs/legendary/waffle[1].png
       outputs/legendary/all_in[1].png: cards/movement/all_in[1].png; cp cards/movement/all_in[1].png outputs/legendary/all_in[1].png
       outputs/legendary/out_of_control[1].png: cards/movement/out_of_control[1].png; cp cards/movement/out_of_control[1].png outputs/legendary/out_of_control[1].png

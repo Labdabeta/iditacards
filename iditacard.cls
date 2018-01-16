@@ -1,4 +1,5 @@
 \LoadClass{standalone}
+% NOTE: Cloud colour is 76baff
 
 \ProvidesClass{iditacard}[2017/05/12 Class for Iditacard cards]
 
@@ -62,18 +63,24 @@
 }
 
 \newcommand{\energy}[1]{%
-\fill [black] (50.0/300.0,875.0/300.0) rectangle (150.0/300.0,775.0/300.0);
-\fill [energy] (55.0/300.0,870.0/300.0) rectangle (145.0/300.0,780.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+% \fill [black] (50.0/300.0,875.0/300.0) rectangle (150.0/300.0,775.0/300.0);
+% \fill [energy] (55.0/300.0,870.0/300.0) rectangle (145.0/300.0,780.0/300.0); % node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+\node [minimum width=0.5in, minimum height=0.5in, anchor=center, inner sep=0mm] at (125.0/300.0,825.0/300.0) {\includegraphics[width=0.5in,height=0.5in]{icons/hand.png}};
+\node [text=black, minimum width=0.5in, minimum height=0.5in, text centered, text width=0.5in, anchor=center, inner sep=0mm] at (125.0/300.0,825.0/300.0) {\bf\fontsize{25}{30}\bebas #1};
 }
 
 \newcommand{\health}[1]{%
-\fill [black] (50.0/300.0,725.0/300.0) rectangle (150.0/300.0,625.0/300.0);
-\fill [health] (55.0/300.0,720.0/300.0) rectangle (145.0/300.0,630.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+%\fill [black] (50.0/300.0,725.0/300.0) rectangle (150.0/300.0,625.0/300.0);
+%\fill [health] (55.0/300.0,720.0/300.0) rectangle (145.0/300.0,630.0/300.0) node [text=black,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+\node [minimum width=0.5in, minimum height=0.5in, anchor=center, inner sep=0mm] at (125.0/300.0,700.0/300.0) {\includegraphics[width=0.5in, height=0.5in]{icons/deck.png}};
+\node [text=black, minimum width=0.5in, minimum height=0.5in, text centered, text width=0.5in, anchor=center, inner sep=0mm] at (125.0/300.0, 700.0/300.0) {\bf\fontsize{25}{30}\bebas #1};
 }
 
 \newcommand{\risk}[1]{%
-\fill [white] (50.0/300.0,575.0/300.0) rectangle (150.0/300.0,475.0/300.0);
-\fill [risk] (55.0/300.0,570.0/300.0) rectangle (145.0/300.0,480.0/300.0) node [text=white,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+%\fill [white] (50.0/300.0,575.0/300.0) rectangle (150.0/300.0,475.0/300.0);
+%\fill [risk] (55.0/300.0,570.0/300.0) rectangle (145.0/300.0,480.0/300.0) node [text=white,pos=0.5] {\bf\fontsize{25}{30}\bebas #1};
+\node [minimum width=0.5in, minimum height=0.5in, anchor=center, inner sep=0mm] at (125.0/300.0, 538.0/300.0) {\includegraphics[width=0.5in, height=0.5in]{icons/risk.png}};
+\node [text=white, minimum width=0.5in, minimum height=0.5in, text centered, text width=0.5in, anchor=center, inner sep=0mm] at (125.0/300.0, 538.0/300.0) {\bf\fontsize{25}{30}\bebas #1};
 }
 
 \newcommand{\@condcost}[2]{\ifnum 0<#1#2\fi}

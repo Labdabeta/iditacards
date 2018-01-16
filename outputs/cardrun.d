@@ -46,7 +46,9 @@ outputs/cardrun.pdf:cards/dogs/malamute.pdf
 outputs/cardrun.pdf:cards/dogs/moose.pdf
 outputs/cardrun.pdf:cards/dogs/polar_bear.pdf
 outputs/cardrun.pdf:cards/dogs/problem_dog.pdf
+outputs/cardrun.pdf:cards/dogs/puppy.pdf
 outputs/cardrun.pdf:cards/dogs/retriever.pdf
+outputs/cardrun.pdf:cards/dogs/robodog.pdf
 outputs/cardrun.pdf:cards/dogs/russian_bear_dog.pdf
 outputs/cardrun.pdf:cards/dogs/smart_dog.pdf
 outputs/cardrun.pdf:cards/dogs/wheel_dog1.pdf
@@ -206,7 +208,9 @@ outputs/cardrun.pdf:cards/util/vigilance.pdf
       export: outputs/cardrun/moose[1].png
       export: outputs/cardrun/polar_bear[1].png
       export: outputs/cardrun/problem_dog[1].png
+      export: outputs/cardrun/puppy[1].png
       export: outputs/cardrun/retriever[1].png
+      export: outputs/cardrun/robodog[1].png
       export: outputs/cardrun/russian_bear_dog[1].png
       export: outputs/cardrun/smart_dog[1].png
       export: outputs/cardrun/wheel_dog1[1].png
@@ -366,7 +370,9 @@ outputs/cardrun.pdf:cards/util/vigilance.pdf
       outputs/cardrun/moose[1].png: cards/dogs/moose[1].png; cp cards/dogs/moose[1].png outputs/cardrun/moose[1].png
       outputs/cardrun/polar_bear[1].png: cards/dogs/polar_bear[1].png; cp cards/dogs/polar_bear[1].png outputs/cardrun/polar_bear[1].png
       outputs/cardrun/problem_dog[1].png: cards/dogs/problem_dog[1].png; cp cards/dogs/problem_dog[1].png outputs/cardrun/problem_dog[1].png
+      outputs/cardrun/puppy[1].png: cards/dogs/puppy[1].png; cp cards/dogs/puppy[1].png outputs/cardrun/puppy[1].png
       outputs/cardrun/retriever[1].png: cards/dogs/retriever[1].png; cp cards/dogs/retriever[1].png outputs/cardrun/retriever[1].png
+      outputs/cardrun/robodog[1].png: cards/dogs/robodog[1].png; cp cards/dogs/robodog[1].png outputs/cardrun/robodog[1].png
       outputs/cardrun/russian_bear_dog[1].png: cards/dogs/russian_bear_dog[1].png; cp cards/dogs/russian_bear_dog[1].png outputs/cardrun/russian_bear_dog[1].png
       outputs/cardrun/smart_dog[1].png: cards/dogs/smart_dog[1].png; cp cards/dogs/smart_dog[1].png outputs/cardrun/smart_dog[1].png
       outputs/cardrun/wheel_dog1[1].png: cards/dogs/wheel_dog1[1].png; cp cards/dogs/wheel_dog1[1].png outputs/cardrun/wheel_dog1[1].png

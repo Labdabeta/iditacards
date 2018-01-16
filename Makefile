@@ -7,9 +7,14 @@ all: decks extras instructions export
 instructions: outputs/instructions.pdf
 
 extras:
-	@cp iditaboard.png outputs/iditaboard.png
-	@cp iditasingle.png outputs/iditasingle.png
+	# Rotate the boards
+	@convert -rotate "90" iditaboard.png outputs/iditaboard.png
+	@convert -rotate "90" iditasingle.png outputs/iditasingle.png
 	@cp cardback.png outputs/cardback.png
+	@cp destroyed.png outputs/destroyed.png
+	@cp supplies.png outputs/supplies.png
+	@cp boxbottom.png outputs/boxbottom.png
+	@cp boxtop.png outputs/boxtop.png
 
 DECKLIST=$(shell ls cards/decks | sed -e 's/.txt//')
 DEPENDLIST=$(DECKLIST:%=%.d)

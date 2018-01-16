@@ -4,6 +4,8 @@ cards/attachments/buffer_panel.pdf
 cards/dogs/engineer_dog.pdf
 cards/dogs/moose.pdf
 cards/dogs/cricket.pdf
+cards/dogs/puppy.pdf
+cards/dogs/robodog.pdf
 cards/food/waffle.pdf
 cards/movement/out_of_control.pdf
 cards/movement/all_in.pdf

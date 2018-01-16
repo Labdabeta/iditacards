@@ -46,7 +46,9 @@ cards/dogs/malamute.pdf
 cards/dogs/moose.pdf
 cards/dogs/polar_bear.pdf
 cards/dogs/problem_dog.pdf
+cards/dogs/puppy.pdf
 cards/dogs/retriever.pdf
+cards/dogs/robodog.pdf
 cards/dogs/russian_bear_dog.pdf
 cards/dogs/smart_dog.pdf
 cards/dogs/wheel_dog1.pdf
