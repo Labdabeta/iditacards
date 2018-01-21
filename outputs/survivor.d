@@ -1,57 +1,5 @@
-outputs/survivor.pdf:cards/attachments/coat.pdf
-outputs/survivor.pdf:cards/attachments/coat.pdf
-outputs/survivor.pdf:cards/attachments/coat.pdf
-outputs/survivor.pdf:cards/attachments/coat.pdf
-outputs/survivor.pdf:cards/attachments/harness.pdf
-outputs/survivor.pdf:cards/attachments/harness.pdf
-outputs/survivor.pdf:cards/attachments/harness.pdf
-outputs/survivor.pdf:cards/attachments/harness.pdf
-outputs/survivor.pdf:cards/dogs/cute_dog.pdf
-outputs/survivor.pdf:cards/dogs/cute_dog.pdf
-outputs/survivor.pdf:cards/dogs/cute_dog.pdf
-outputs/survivor.pdf:cards/dogs/cute_dog.pdf
-outputs/survivor.pdf:cards/dogs/smart_dog.pdf
-outputs/survivor.pdf:cards/dogs/smart_dog.pdf
-outputs/survivor.pdf:cards/dogs/smart_dog.pdf
-outputs/survivor.pdf:cards/dogs/smart_dog.pdf
-outputs/survivor.pdf:cards/food/poutine.pdf
-outputs/survivor.pdf:cards/food/poutine.pdf
-outputs/survivor.pdf:cards/food/poutine.pdf
-outputs/survivor.pdf:cards/food/poutine.pdf
-outputs/survivor.pdf:cards/food/raw_venison.pdf
-outputs/survivor.pdf:cards/food/raw_venison.pdf
-outputs/survivor.pdf:cards/food/raw_venison.pdf
-outputs/survivor.pdf:cards/food/raw_venison.pdf
-outputs/survivor.pdf:cards/food/venison_carpaccio.pdf
-outputs/survivor.pdf:cards/food/venison_carpaccio.pdf
-outputs/survivor.pdf:cards/food/venison_carpaccio.pdf
-outputs/survivor.pdf:cards/food/venison_carpaccio.pdf
-outputs/survivor.pdf:cards/food/venison_steak.pdf
-outputs/survivor.pdf:cards/food/venison_steak.pdf
-outputs/survivor.pdf:cards/food/venison_steak.pdf
-outputs/survivor.pdf:cards/food/venison_steak.pdf
-outputs/survivor.pdf:cards/personal/band_aid.pdf
-outputs/survivor.pdf:cards/personal/band_aid.pdf
-outputs/survivor.pdf:cards/personal/band_aid.pdf
-outputs/survivor.pdf:cards/personal/band_aid.pdf
-outputs/survivor.pdf:cards/personal/ibuprofin.pdf
-outputs/survivor.pdf:cards/personal/ibuprofin.pdf
-outputs/survivor.pdf:cards/personal/ibuprofin.pdf
-outputs/survivor.pdf:cards/util/campfire.pdf
-outputs/survivor.pdf:cards/util/campfire.pdf
-outputs/survivor.pdf:cards/util/campfire.pdf
-outputs/survivor.pdf:cards/util/campfire.pdf
-outputs/survivor.pdf:cards/util/leather_hide.pdf
-outputs/survivor.pdf:cards/util/leather_hide.pdf
-outputs/survivor.pdf:cards/util/leather_hide.pdf
-outputs/survivor.pdf:cards/util/leather_hide.pdf
-outputs/survivor.pdf:cards/util/leather_jacket.pdf
-outputs/survivor.pdf:cards/util/leather_jacket.pdf
-outputs/survivor.pdf:cards/util/leather_jacket.pdf
-outputs/survivor.pdf:cards/util/vigilance.pdf
-outputs/survivor.pdf:cards/util/vigilance.pdf
-outputs/survivor.pdf:cards/util/vigilance.pdf
-outputs/survivor.pdf:cards/info/survivor_summary.pdf
+outputs/survivor.pdf:cards/attachments/coat.pdf cards/attachments/coat.pdf cards/attachments/coat.pdf cards/attachments/coat.pdf cards/attachments/harness.pdf cards/attachments/harness.pdf cards/attachments/harness.pdf cards/attachments/harness.pdf cards/dogs/cute_dog.pdf cards/dogs/cute_dog.pdf cards/dogs/cute_dog.pdf cards/dogs/cute_dog.pdf cards/dogs/smart_dog.pdf cards/dogs/smart_dog.pdf cards/dogs/smart_dog.pdf cards/dogs/smart_dog.pdf cards/food/poutine.pdf cards/food/poutine.pdf cards/food/poutine.pdf cards/food/poutine.pdf cards/food/raw_venison.pdf cards/food/raw_venison.pdf cards/food/raw_venison.pdf cards/food/raw_venison.pdf cards/food/venison_carpaccio.pdf cards/food/venison_carpaccio.pdf cards/food/venison_carpaccio.pdf cards/food/venison_carpaccio.pdf cards/food/venison_steak.pdf cards/food/venison_steak.pdf cards/food/venison_steak.pdf cards/food/venison_steak.pdf cards/personal/band_aid.pdf cards/personal/band_aid.pdf cards/personal/band_aid.pdf cards/personal/band_aid.pdf cards/personal/ibuprofin.pdf cards/personal/ibuprofin.pdf cards/personal/ibuprofin.pdf cards/util/campfire.pdf cards/util/campfire.pdf cards/util/campfire.pdf cards/util/campfire.pdf cards/util/leather_hide.pdf cards/util/leather_hide.pdf cards/util/leather_hide.pdf cards/util/leather_hide.pdf cards/util/leather_jacket.pdf cards/util/leather_jacket.pdf cards/util/leather_jacket.pdf cards/util/vigilance.pdf cards/util/vigilance.pdf cards/util/vigilance.pdf cards/info/survivor_summary.pdf 
+	pdfunite $+ $@
       export: outputs/survivor/coat[4].png
       export: outputs/survivor/harness[4].png
       export: outputs/survivor/cute_dog[4].png

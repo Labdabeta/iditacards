@@ -1,25 +1,5 @@
-outputs/legendary.pdf:cards/attachments/nuclear_reactor.pdf
-outputs/legendary.pdf:cards/attachments/dog_collar.pdf
-outputs/legendary.pdf:cards/attachments/buffer_panel.pdf
-outputs/legendary.pdf:cards/dogs/engineer_dog.pdf
-outputs/legendary.pdf:cards/dogs/moose.pdf
-outputs/legendary.pdf:cards/dogs/cricket.pdf
-outputs/legendary.pdf:cards/dogs/puppy.pdf
-outputs/legendary.pdf:cards/dogs/robodog.pdf
-outputs/legendary.pdf:cards/food/waffle.pdf
-outputs/legendary.pdf:cards/movement/out_of_control.pdf
-outputs/legendary.pdf:cards/movement/all_in.pdf
-outputs/legendary.pdf:cards/personal/diamorphine.pdf
-outputs/legendary.pdf:cards/personal/meditate.pdf
-outputs/legendary.pdf:cards/personal/surgery.pdf
-outputs/legendary.pdf:cards/sleds/desperate_times.pdf
-outputs/legendary.pdf:cards/sleds/satiated.pdf
-outputs/legendary.pdf:cards/sleds/here_boy.pdf
-outputs/legendary.pdf:cards/util/sleeping_bag.pdf
-outputs/legendary.pdf:cards/util/daylight_savings_time.pdf
-outputs/legendary.pdf:cards/util/sticky_snow.pdf
-outputs/legendary.pdf:cards/util/utility_knife.pdf
-outputs/legendary.pdf:cards/util/serenity.pdf
+outputs/legendary.pdf:cards/attachments/nuclear_reactor.pdf cards/attachments/dog_collar.pdf cards/attachments/buffer_panel.pdf cards/dogs/engineer_dog.pdf cards/dogs/moose.pdf cards/dogs/cricket.pdf cards/dogs/puppy.pdf cards/dogs/robodog.pdf cards/food/waffle.pdf cards/movement/out_of_control.pdf cards/movement/all_in.pdf cards/personal/diamorphine.pdf cards/personal/meditate.pdf cards/personal/surgery.pdf cards/sleds/desperate_times.pdf cards/sleds/satiated.pdf cards/sleds/here_boy.pdf cards/util/sleeping_bag.pdf cards/util/daylight_savings_time.pdf cards/util/sticky_snow.pdf cards/util/utility_knife.pdf cards/util/serenity.pdf 
+	pdfunite $+ $@
       export: outputs/legendary/buffer_panel[1].png
       export: outputs/legendary/dog_collar[1].png
       export: outputs/legendary/nuclear_reactor[1].png

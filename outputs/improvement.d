@@ -1,57 +1,5 @@
-outputs/improvement.pdf:cards/attachments/tiara.pdf
-outputs/improvement.pdf:cards/attachments/tiara.pdf
-outputs/improvement.pdf:cards/attachments/tiara.pdf
-outputs/improvement.pdf:cards/attachments/tiara.pdf
-outputs/improvement.pdf:cards/dogs/cat.pdf
-outputs/improvement.pdf:cards/dogs/cat.pdf
-outputs/improvement.pdf:cards/dogs/cat.pdf
-outputs/improvement.pdf:cards/dogs/lazy_dog.pdf
-outputs/improvement.pdf:cards/dogs/lazy_dog.pdf
-outputs/improvement.pdf:cards/dogs/lazy_dog.pdf
-outputs/improvement.pdf:cards/dogs/malamute.pdf
-outputs/improvement.pdf:cards/dogs/malamute.pdf
-outputs/improvement.pdf:cards/dogs/malamute.pdf
-outputs/improvement.pdf:cards/dogs/retriever.pdf
-outputs/improvement.pdf:cards/dogs/retriever.pdf
-outputs/improvement.pdf:cards/dogs/retriever.pdf
-outputs/improvement.pdf:cards/dogs/retriever.pdf
-outputs/improvement.pdf:cards/food/bison.pdf
-outputs/improvement.pdf:cards/food/bison.pdf
-outputs/improvement.pdf:cards/food/midnight_snack.pdf
-outputs/improvement.pdf:cards/food/midnight_snack.pdf
-outputs/improvement.pdf:cards/food/midnight_snack.pdf
-outputs/improvement.pdf:cards/food/midnight_snack.pdf
-outputs/improvement.pdf:cards/movement/through_the_night.pdf
-outputs/improvement.pdf:cards/movement/through_the_night.pdf
-outputs/improvement.pdf:cards/personal/bandage.pdf
-outputs/improvement.pdf:cards/personal/bandage.pdf
-outputs/improvement.pdf:cards/personal/bandage.pdf
-outputs/improvement.pdf:cards/personal/bandage.pdf
-outputs/improvement.pdf:cards/personal/brandy.pdf
-outputs/improvement.pdf:cards/personal/brandy.pdf
-outputs/improvement.pdf:cards/personal/brandy.pdf
-outputs/improvement.pdf:cards/personal/brandy.pdf
-outputs/improvement.pdf:cards/personal/caffeine.pdf
-outputs/improvement.pdf:cards/personal/caffeine.pdf
-outputs/improvement.pdf:cards/personal/caffeine.pdf
-outputs/improvement.pdf:cards/sleds/makeshift_sled.pdf
-outputs/improvement.pdf:cards/sleds/makeshift_sled.pdf
-outputs/improvement.pdf:cards/sleds/makeshift_sled.pdf
-outputs/improvement.pdf:cards/sleds/new_sled.pdf
-outputs/improvement.pdf:cards/sleds/new_sled.pdf
-outputs/improvement.pdf:cards/sleds/study_up.pdf
-outputs/improvement.pdf:cards/sleds/study_up.pdf
-outputs/improvement.pdf:cards/sleds/study_up.pdf
-outputs/improvement.pdf:cards/sleds/study_up.pdf
-outputs/improvement.pdf:cards/util/rope.pdf
-outputs/improvement.pdf:cards/util/rope.pdf
-outputs/improvement.pdf:cards/util/rope.pdf
-outputs/improvement.pdf:cards/util/rope.pdf
-outputs/improvement.pdf:cards/util/torch.pdf
-outputs/improvement.pdf:cards/util/torch.pdf
-outputs/improvement.pdf:cards/util/torch.pdf
-outputs/improvement.pdf:cards/util/torch.pdf
-outputs/improvement.pdf:cards/info/improvement_summary.pdf
+outputs/improvement.pdf:cards/attachments/tiara.pdf cards/attachments/tiara.pdf cards/attachments/tiara.pdf cards/attachments/tiara.pdf cards/dogs/cat.pdf cards/dogs/cat.pdf cards/dogs/cat.pdf cards/dogs/lazy_dog.pdf cards/dogs/lazy_dog.pdf cards/dogs/lazy_dog.pdf cards/dogs/malamute.pdf cards/dogs/malamute.pdf cards/dogs/malamute.pdf cards/dogs/retriever.pdf cards/dogs/retriever.pdf cards/dogs/retriever.pdf cards/dogs/retriever.pdf cards/food/bison.pdf cards/food/bison.pdf cards/food/midnight_snack.pdf cards/food/midnight_snack.pdf cards/food/midnight_snack.pdf cards/food/midnight_snack.pdf cards/movement/through_the_night.pdf cards/movement/through_the_night.pdf cards/personal/bandage.pdf cards/personal/bandage.pdf cards/personal/bandage.pdf cards/personal/bandage.pdf cards/personal/brandy.pdf cards/personal/brandy.pdf cards/personal/brandy.pdf cards/personal/brandy.pdf cards/personal/caffeine.pdf cards/personal/caffeine.pdf cards/personal/caffeine.pdf cards/sleds/makeshift_sled.pdf cards/sleds/makeshift_sled.pdf cards/sleds/makeshift_sled.pdf cards/sleds/new_sled.pdf cards/sleds/new_sled.pdf cards/sleds/study_up.pdf cards/sleds/study_up.pdf cards/sleds/study_up.pdf cards/sleds/study_up.pdf cards/util/rope.pdf cards/util/rope.pdf cards/util/rope.pdf cards/util/rope.pdf cards/util/torch.pdf cards/util/torch.pdf cards/util/torch.pdf cards/util/torch.pdf cards/info/improvement_summary.pdf 
+	pdfunite $+ $@
       export: outputs/improvement/tiara[4].png
       export: outputs/improvement/cat[3].png
       export: outputs/improvement/lazy_dog[3].png

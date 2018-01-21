@@ -100,6 +100,11 @@
 \node [rectangle, minimum width=1.833333in, minimum height=200.0/300.0, text centered, text width=1.833333in, inner sep=0mm, anchor=north] at (375.0/300.0,450.0/300) {\fontsize{16}{16}\bebas#1\par};
 }
 
+\newcommand{\helptext}[1]{%
+% add draw to the node to see its box
+\node [rectangle, minimum width=1.833333in, minimum height=200.0/300.0, text centered, text width=1.833333in, inner sep=0mm, anchor=north] at (375.0/300.0, 800.0/300.0) {\fontsize{16}{16}\bebas#1\par};
+}
+
 \newcommand{\flava}[1]{%
 % add draw to the node to see its box
 \node [rectangle, minimum width=1.833333in, minimum height=100.0/300.0, text centered, text width=1.833333in, inner sep=0mm, anchor=north] at (375.0/300.0,150.0/300.0) {\fontsize{6}{6}\alegreya"#1"\par};

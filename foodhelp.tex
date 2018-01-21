@@ -1,0 +1,24 @@
+% Compile with XeLaTeX
+% Now tests new features!
+\documentclass{iditacard}
+% Montage with `montage -tile 3x3 -geometry 750x1050+50+25 in* out.pdf`
+
+\rarity{common}
+\cardtype{food}
+\deck{none}
+
+\begin{document}
+%\begin{playcard}[special]{utility}{legendary}
+\begin{card}
+%\art{iditaboard}
+%\costs{1}{2}{3}
+\health{\kern-.1ex \lower.3ex\hbox{+}}
+\name{Starvation}
+\helptext{\vskip-1ex Starvation increases health costs.\\When you play a food card reduce
+    your starvation by 1.\\A cost of 0 stays 0.\\If you reach 7 starvation you
+    die:\\Go back 30 \Mms\ and remove your Starvation/Hypothermia.}
+%\flava{What doesn't kill you makes you stronger.}
+%\type{utility}
+%\end{playcard}
+\end{card}
+\end{document}

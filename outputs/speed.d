@@ -1,57 +1,5 @@
-outputs/speed.pdf:cards/attachments/dog_shoes.pdf
-outputs/speed.pdf:cards/attachments/dog_shoes.pdf
-outputs/speed.pdf:cards/attachments/dog_shoes.pdf
-outputs/speed.pdf:cards/attachments/dog_shoes.pdf
-outputs/speed.pdf:cards/attachments/squirrel.pdf
-outputs/speed.pdf:cards/attachments/squirrel.pdf
-outputs/speed.pdf:cards/attachments/squirrel.pdf
-outputs/speed.pdf:cards/attachments/steam_engine.pdf
-outputs/speed.pdf:cards/attachments/steam_engine.pdf
-outputs/speed.pdf:cards/dogs/bear.pdf
-outputs/speed.pdf:cards/dogs/bear.pdf
-outputs/speed.pdf:cards/dogs/bear.pdf
-outputs/speed.pdf:cards/dogs/big_dog.pdf
-outputs/speed.pdf:cards/dogs/big_dog.pdf
-outputs/speed.pdf:cards/dogs/big_dog.pdf
-outputs/speed.pdf:cards/dogs/chihuahua.pdf
-outputs/speed.pdf:cards/dogs/chihuahua.pdf
-outputs/speed.pdf:cards/dogs/greyhound.pdf
-outputs/speed.pdf:cards/dogs/greyhound.pdf
-outputs/speed.pdf:cards/dogs/greyhound.pdf
-outputs/speed.pdf:cards/dogs/greyhound.pdf
-outputs/speed.pdf:cards/dogs/problem_dog.pdf
-outputs/speed.pdf:cards/dogs/problem_dog.pdf
-outputs/speed.pdf:cards/dogs/problem_dog.pdf
-outputs/speed.pdf:cards/food/dog_food.pdf
-outputs/speed.pdf:cards/food/dog_food.pdf
-outputs/speed.pdf:cards/movement/downhill_slide.pdf
-outputs/speed.pdf:cards/movement/downhill_slide.pdf
-outputs/speed.pdf:cards/movement/downhill_slide.pdf
-outputs/speed.pdf:cards/movement/haste.pdf
-outputs/speed.pdf:cards/movement/haste.pdf
-outputs/speed.pdf:cards/movement/haste.pdf
-outputs/speed.pdf:cards/movement/iditarod_drift.pdf
-outputs/speed.pdf:cards/movement/iditarod_drift.pdf
-outputs/speed.pdf:cards/movement/iditarod_drift.pdf
-outputs/speed.pdf:cards/movement/midnight_sun.pdf
-outputs/speed.pdf:cards/movement/midnight_sun.pdf
-outputs/speed.pdf:cards/movement/midnight_sun.pdf
-outputs/speed.pdf:cards/movement/push.pdf
-outputs/speed.pdf:cards/movement/push.pdf
-outputs/speed.pdf:cards/movement/push.pdf
-outputs/speed.pdf:cards/movement/push.pdf
-outputs/speed.pdf:cards/movement/rush.pdf
-outputs/speed.pdf:cards/movement/rush.pdf
-outputs/speed.pdf:cards/movement/rush.pdf
-outputs/speed.pdf:cards/movement/slow_and_steady.pdf
-outputs/speed.pdf:cards/movement/slow_and_steady.pdf
-outputs/speed.pdf:cards/movement/slow_and_steady.pdf
-outputs/speed.pdf:cards/movement/sprint.pdf
-outputs/speed.pdf:cards/movement/sprint.pdf
-outputs/speed.pdf:cards/movement/tactical_play.pdf
-outputs/speed.pdf:cards/movement/tactical_play.pdf
-outputs/speed.pdf:cards/movement/tactical_play.pdf
-outputs/speed.pdf:cards/info/speed_summary.pdf
+outputs/speed.pdf:cards/attachments/dog_shoes.pdf cards/attachments/dog_shoes.pdf cards/attachments/dog_shoes.pdf cards/attachments/dog_shoes.pdf cards/attachments/squirrel.pdf cards/attachments/squirrel.pdf cards/attachments/squirrel.pdf cards/attachments/steam_engine.pdf cards/attachments/steam_engine.pdf cards/dogs/bear.pdf cards/dogs/bear.pdf cards/dogs/bear.pdf cards/dogs/big_dog.pdf cards/dogs/big_dog.pdf cards/dogs/big_dog.pdf cards/dogs/chihuahua.pdf cards/dogs/chihuahua.pdf cards/dogs/greyhound.pdf cards/dogs/greyhound.pdf cards/dogs/greyhound.pdf cards/dogs/greyhound.pdf cards/dogs/problem_dog.pdf cards/dogs/problem_dog.pdf cards/dogs/problem_dog.pdf cards/food/dog_food.pdf cards/food/dog_food.pdf cards/movement/downhill_slide.pdf cards/movement/downhill_slide.pdf cards/movement/downhill_slide.pdf cards/movement/haste.pdf cards/movement/haste.pdf cards/movement/haste.pdf cards/movement/iditarod_drift.pdf cards/movement/iditarod_drift.pdf cards/movement/iditarod_drift.pdf cards/movement/midnight_sun.pdf cards/movement/midnight_sun.pdf cards/movement/midnight_sun.pdf cards/movement/push.pdf cards/movement/push.pdf cards/movement/push.pdf cards/movement/push.pdf cards/movement/rush.pdf cards/movement/rush.pdf cards/movement/rush.pdf cards/movement/slow_and_steady.pdf cards/movement/slow_and_steady.pdf cards/movement/slow_and_steady.pdf cards/movement/sprint.pdf cards/movement/sprint.pdf cards/movement/tactical_play.pdf cards/movement/tactical_play.pdf cards/movement/tactical_play.pdf cards/info/speed_summary.pdf 
+	pdfunite $+ $@
       export: outputs/speed/dog_shoes[4].png
       export: outputs/speed/squirrel[3].png
       export: outputs/speed/steam_engine[2].png

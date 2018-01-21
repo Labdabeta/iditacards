@@ -1,57 +1,5 @@
-outputs/attack.pdf:cards/attachments/plate_mail.pdf
-outputs/attack.pdf:cards/attachments/plate_mail.pdf
-outputs/attack.pdf:cards/dogs/polar_bear.pdf
-outputs/attack.pdf:cards/dogs/polar_bear.pdf
-outputs/attack.pdf:cards/dogs/russian_bear_dog.pdf
-outputs/attack.pdf:cards/dogs/russian_bear_dog.pdf
-outputs/attack.pdf:cards/dogs/russian_bear_dog.pdf
-outputs/attack.pdf:cards/food/eat_dog.pdf
-outputs/attack.pdf:cards/food/eat_dog.pdf
-outputs/attack.pdf:cards/food/whale_meat.pdf
-outputs/attack.pdf:cards/food/whale_meat.pdf
-outputs/attack.pdf:cards/movement/hitch_a_ride.pdf
-outputs/attack.pdf:cards/movement/hitch_a_ride.pdf
-outputs/attack.pdf:cards/movement/travel_light.pdf
-outputs/attack.pdf:cards/movement/travel_light.pdf
-outputs/attack.pdf:cards/movement/travel_light.pdf
-outputs/attack.pdf:cards/movement/travel_light.pdf
-outputs/attack.pdf:cards/sleds/improvise.pdf
-outputs/attack.pdf:cards/sleds/improvise.pdf
-outputs/attack.pdf:cards/sleds/improvise.pdf
-outputs/attack.pdf:cards/sleds/improvise.pdf
-outputs/attack.pdf:cards/sleds/salvage.pdf
-outputs/attack.pdf:cards/sleds/salvage.pdf
-outputs/attack.pdf:cards/sleds/salvage.pdf
-outputs/attack.pdf:cards/sleds/salvage.pdf
-outputs/attack.pdf:cards/sleds/scrapyard.pdf
-outputs/attack.pdf:cards/sleds/scrapyard.pdf
-outputs/attack.pdf:cards/sleds/stop_and_shop.pdf
-outputs/attack.pdf:cards/sleds/stop_and_shop.pdf
-outputs/attack.pdf:cards/sleds/trade_dog.pdf
-outputs/attack.pdf:cards/sleds/trade_dog.pdf
-outputs/attack.pdf:cards/util/dog_trap.pdf
-outputs/attack.pdf:cards/util/dog_trap.pdf
-outputs/attack.pdf:cards/util/dog_trap.pdf
-outputs/attack.pdf:cards/util/dog_trap.pdf
-outputs/attack.pdf:cards/util/hydrogen_sulfide.pdf
-outputs/attack.pdf:cards/util/hydrogen_sulfide.pdf
-outputs/attack.pdf:cards/util/hydrogen_sulfide.pdf
-outputs/attack.pdf:cards/util/ice_box.pdf
-outputs/attack.pdf:cards/util/ice_box.pdf
-outputs/attack.pdf:cards/util/ice_box.pdf
-outputs/attack.pdf:cards/util/referee.pdf
-outputs/attack.pdf:cards/util/referee.pdf
-outputs/attack.pdf:cards/util/referee.pdf
-outputs/attack.pdf:cards/util/referee.pdf
-outputs/attack.pdf:cards/util/stab_in_the_dark.pdf
-outputs/attack.pdf:cards/util/stab_in_the_dark.pdf
-outputs/attack.pdf:cards/util/stab_in_the_dark.pdf
-outputs/attack.pdf:cards/util/stab_in_the_dark.pdf
-outputs/attack.pdf:cards/util/thermostat.pdf
-outputs/attack.pdf:cards/util/thermostat.pdf
-outputs/attack.pdf:cards/util/tip_sled.pdf
-outputs/attack.pdf:cards/util/tip_sled.pdf
-outputs/attack.pdf:cards/info/attack_summary.pdf
+outputs/attack.pdf:cards/attachments/plate_mail.pdf cards/attachments/plate_mail.pdf cards/dogs/polar_bear.pdf cards/dogs/polar_bear.pdf cards/dogs/russian_bear_dog.pdf cards/dogs/russian_bear_dog.pdf cards/dogs/russian_bear_dog.pdf cards/food/eat_dog.pdf cards/food/eat_dog.pdf cards/food/whale_meat.pdf cards/food/whale_meat.pdf cards/movement/hitch_a_ride.pdf cards/movement/hitch_a_ride.pdf cards/movement/travel_light.pdf cards/movement/travel_light.pdf cards/movement/travel_light.pdf cards/movement/travel_light.pdf cards/sleds/improvise.pdf cards/sleds/improvise.pdf cards/sleds/improvise.pdf cards/sleds/improvise.pdf cards/sleds/salvage.pdf cards/sleds/salvage.pdf cards/sleds/salvage.pdf cards/sleds/salvage.pdf cards/sleds/scrapyard.pdf cards/sleds/scrapyard.pdf cards/sleds/stop_and_shop.pdf cards/sleds/stop_and_shop.pdf cards/sleds/trade_dog.pdf cards/sleds/trade_dog.pdf cards/util/dog_trap.pdf cards/util/dog_trap.pdf cards/util/dog_trap.pdf cards/util/dog_trap.pdf cards/util/hydrogen_sulfide.pdf cards/util/hydrogen_sulfide.pdf cards/util/hydrogen_sulfide.pdf cards/util/ice_box.pdf cards/util/ice_box.pdf cards/util/ice_box.pdf cards/util/referee.pdf cards/util/referee.pdf cards/util/referee.pdf cards/util/referee.pdf cards/util/stab_in_the_dark.pdf cards/util/stab_in_the_dark.pdf cards/util/stab_in_the_dark.pdf cards/util/stab_in_the_dark.pdf cards/util/thermostat.pdf cards/util/thermostat.pdf cards/util/tip_sled.pdf cards/util/tip_sled.pdf cards/info/attack_summary.pdf 
+	pdfunite $+ $@
       export: outputs/attack/plate_mail[2].png
       export: outputs/attack/polar_bear[2].png
       export: outputs/attack/russian_bear_dog[3].png
